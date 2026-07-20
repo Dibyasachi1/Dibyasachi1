@@ -22,26 +22,11 @@
 
 ## 🧑‍💻 About Me
 
-```typescript
-const dibyasachi = {
-  location: "Cuttack, Odisha, India 🇮🇳",
-  role: "Full Stack Developer @ Ultraconic Technologies",
-  education: "MCA — IPSAR, Cuttack",
-  experience: "3+ years · 50+ projects shipped",
-  code: ["TypeScript", "JavaScript", "Python", "Java"],
-  frontend: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "Redux", "Zustand"],
-  backend: ["Node.js", "Express", "GraphQL", "Prisma", "Django"],
-  databases: ["MongoDB", "PostgreSQL", "Redis"],
-  mobile: ["React Native"],
-  devops: ["Docker", "AWS", "Vercel", "CI/CD"],
-  currentFocus: "Building scalable SaaS platforms 🚀",
-  motto: "I turn complex requirements into elegant, deployable products.",
-};
+<div align="center">
 
-while (notHired) {
-  keepCoding();
-}
-```
+<img src="./assets/about-card.svg" width="100%" alt="About Dibyasachi — Full Stack Developer at Ultraconic Technologies" />
+
+</div>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 

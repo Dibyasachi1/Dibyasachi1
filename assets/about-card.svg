@@ -1,0 +1,151 @@
+<svg width="1000" height="520" viewBox="0 0 1000 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="About Dibyasachi Mohanty">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1000" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1021"/>
+      <stop offset="0.5" stop-color="#101736"/>
+      <stop offset="1" stop-color="#0B1021"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8">
+        <animate attributeName="stop-color" values="#38BDF8;#818CF8;#E879F9;#38BDF8" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#818CF8">
+        <animate attributeName="stop-color" values="#818CF8;#E879F9;#38BDF8;#818CF8" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#E879F9">
+        <animate attributeName="stop-color" values="#E879F9;#38BDF8;#818CF8;#E879F9" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E2A52"/>
+      <stop offset="1" stop-color="#151B36"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .title { font: 700 15px 'Segoe UI', Ubuntu, Arial, sans-serif; fill: #94A3B8; letter-spacing: 0.5px; }
+      .key { font: 500 15px 'Cascadia Code', 'Fira Code', Consolas, monospace; fill: #E879F9; }
+      .val { font: 500 15px 'Cascadia Code', 'Fira Code', Consolas, monospace; fill: #7DD3FC; }
+      .plain { font: 500 15px 'Cascadia Code', 'Fira Code', Consolas, monospace; fill: #C7D2FE; }
+      .muted { font: 500 14px 'Cascadia Code', 'Fira Code', Consolas, monospace; fill: #64748B; }
+      .label { font: 600 11px 'Segoe UI', Ubuntu, Arial, sans-serif; fill: #94A3B8; letter-spacing: 1.2px; }
+      .chipText { font: 600 12px 'Segoe UI', Ubuntu, Arial, sans-serif; fill: #C7D2FE; }
+      .motto { font: 600 16px 'Segoe UI', Ubuntu, Arial, sans-serif; fill: #E2E8F0; }
+      .statNum { font: 800 22px 'Segoe UI', Ubuntu, Arial, sans-serif; fill: #38BDF8; }
+      .statLbl { font: 500 12px 'Segoe UI', Ubuntu, Arial, sans-serif; fill: #94A3B8; }
+      .blink { animation: blink 1.1s step-end infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .fadeIn { opacity: 0; animation: fade 0.8s ease forwards; }
+      .d1 { animation-delay: 0.1s; }
+      .d2 { animation-delay: 0.2s; }
+      .d3 { animation-delay: 0.3s; }
+      .d4 { animation-delay: 0.4s; }
+      @keyframes fade { to { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect x="20" y="20" width="960" height="480" rx="18" fill="url(#cardBg)" stroke="#1E2A52" stroke-width="1.5" filter="url(#soft)"/>
+  <rect x="20" y="20" width="960" height="4" rx="2" fill="url(#bar)"/>
+
+  <circle cx="52" cy="52" r="6" fill="#F87171"/>
+  <circle cx="74" cy="52" r="6" fill="#FBBF24"/>
+  <circle cx="96" cy="52" r="6" fill="#34D399"/>
+  <text x="500" y="57" text-anchor="middle" class="title">dibyasachi.ts &#8212; About</text>
+
+  <g class="fadeIn d1">
+    <text x="56" y="110" class="muted">/** whoami */</text>
+    <text x="56" y="142" class="plain"><tspan class="key">const</tspan> dibyasachi = {</text>
+
+    <text x="76" y="178" class="key">location</text>
+    <text x="200" y="178" class="muted">:</text>
+    <text x="220" y="178" class="val">"Cuttack, Odisha, India"</text>
+    <text x="468" y="178" class="muted">,</text>
+
+    <text x="76" y="210" class="key">role</text>
+    <text x="200" y="210" class="muted">:</text>
+    <text x="220" y="210" class="val">"Full Stack Developer"</text>
+    <text x="448" y="210" class="muted">,</text>
+
+    <text x="76" y="242" class="key">company</text>
+    <text x="200" y="242" class="muted">:</text>
+    <text x="220" y="242" class="val">"Ultraconic Technologies"</text>
+    <text x="478" y="242" class="muted">,</text>
+
+    <text x="76" y="274" class="key">education</text>
+    <text x="200" y="274" class="muted">:</text>
+    <text x="220" y="274" class="val">"MCA &#8212; IPSAR, Cuttack"</text>
+    <text x="458" y="274" class="muted">,</text>
+
+    <text x="76" y="306" class="key">focus</text>
+    <text x="200" y="306" class="muted">:</text>
+    <text x="220" y="306" class="val">"Scalable SaaS platforms"</text>
+    <text x="468" y="306" class="muted">,</text>
+
+    <text x="56" y="340" class="plain">};</text>
+    <text x="56" y="376" class="muted">while (</text>
+    <text x="128" y="376" class="key">building</text>
+    <text x="216" y="376" class="muted">) </text>
+    <text x="240" y="376" class="plain">keepShipping()</text>
+    <text x="390" y="376" class="muted">;</text>
+    <rect x="402" y="360" width="9" height="18" fill="#38BDF8" class="blink"/>
+  </g>
+
+  <g class="fadeIn d2">
+    <rect x="560" y="100" width="380" height="100" rx="12" fill="#151B36" stroke="#1E2A52"/>
+    <text x="590" y="132" class="label">SHIPPED</text>
+    <text x="590" y="168" class="statNum">50+</text>
+    <text x="590" y="186" class="statLbl">Projects</text>
+
+    <line x1="690" y1="120" x2="690" y2="180" stroke="#1E2A52"/>
+
+    <text x="720" y="132" class="label">EXPERIENCE</text>
+    <text x="720" y="168" class="statNum">3+</text>
+    <text x="720" y="186" class="statLbl">Years</text>
+
+    <line x1="820" y1="120" x2="820" y2="180" stroke="#1E2A52"/>
+
+    <text x="850" y="132" class="label">STACK</text>
+    <text x="850" y="168" class="statNum">Full</text>
+    <text x="850" y="186" class="statLbl">Stack</text>
+  </g>
+
+  <g class="fadeIn d3">
+    <text x="560" y="236" class="label">CORE STACK</text>
+
+    <rect x="560" y="250" width="88" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="604" y="268" text-anchor="middle" class="chipText">TypeScript</text>
+    <rect x="658" y="250" width="72" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="694" y="268" text-anchor="middle" class="chipText">React</text>
+    <rect x="740" y="250" width="78" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="779" y="268" text-anchor="middle" class="chipText">Next.js</text>
+    <rect x="828" y="250" width="84" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="870" y="268" text-anchor="middle" class="chipText">Node.js</text>
+
+    <rect x="560" y="288" width="78" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="599" y="306" text-anchor="middle" class="chipText">GraphQL</text>
+    <rect x="648" y="288" width="70" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="683" y="306" text-anchor="middle" class="chipText">Prisma</text>
+    <rect x="728" y="288" width="88" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="772" y="306" text-anchor="middle" class="chipText">PostgreSQL</text>
+    <rect x="826" y="288" width="86" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="869" y="306" text-anchor="middle" class="chipText">MongoDB</text>
+
+    <rect x="560" y="326" width="102" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="611" y="344" text-anchor="middle" class="chipText">React Native</text>
+    <rect x="672" y="326" width="72" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="708" y="344" text-anchor="middle" class="chipText">Docker</text>
+    <rect x="754" y="326" width="58" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="783" y="344" text-anchor="middle" class="chipText">AWS</text>
+    <rect x="822" y="326" width="70" height="28" rx="8" fill="url(#chip)" stroke="#2A365C"/>
+    <text x="857" y="344" text-anchor="middle" class="chipText">Vercel</text>
+  </g>
+
+  <g class="fadeIn d4">
+    <rect x="56" y="420" width="888" height="52" rx="12" fill="#151B36" stroke="#1E2A52"/>
+    <circle cx="84" cy="446" r="5" fill="#34D399">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="104" y="452" class="motto">I turn complex requirements into elegant, deployable products.</text>
+  </g>
+</svg>
