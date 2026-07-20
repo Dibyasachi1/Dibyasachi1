@@ -90,7 +90,7 @@
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Dibyasachi1&theme=algolia&no-frame=true&no-bg=true&row=1&column=7&margin-w=8" alt="GitHub trophies"/>
+<img src="./assets/github-trophies.svg" alt="GitHub trophies"/>
 
 </div>
 
