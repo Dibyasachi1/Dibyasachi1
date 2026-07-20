@@ -1,0 +1,23 @@
+<svg width="1000" height="34" viewBox="0 0 1000 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dg" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8">
+        <animate attributeName="stop-color" values="#38BDF8;#818CF8;#E879F9;#38BDF8" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#818CF8">
+        <animate attributeName="stop-color" values="#818CF8;#E879F9;#38BDF8;#818CF8" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#E879F9">
+        <animate attributeName="stop-color" values="#E879F9;#38BDF8;#818CF8;#E879F9" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  <path d="M0 17 Q 62.5 2, 125 17 T 250 17 T 375 17 T 500 17 T 625 17 T 750 17 T 875 17 T 1000 17"
+        stroke="url(#dg)" stroke-width="3" stroke-linecap="round" fill="none">
+    <animate attributeName="d"
+      values="M0 17 Q 62.5 2, 125 17 T 250 17 T 375 17 T 500 17 T 625 17 T 750 17 T 875 17 T 1000 17;
+              M0 17 Q 62.5 32, 125 17 T 250 17 T 375 17 T 500 17 T 625 17 T 750 17 T 875 17 T 1000 17;
+              M0 17 Q 62.5 2, 125 17 T 250 17 T 375 17 T 500 17 T 625 17 T 750 17 T 875 17 T 1000 17"
+      dur="4s" repeatCount="indefinite"/>
+  </path>
+</svg>

@@ -1,0 +1,112 @@
+<svg width="1000" height="320" viewBox="0 0 1000 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1021"/>
+      <stop offset="0.55" stop-color="#101736"/>
+      <stop offset="1" stop-color="#0B1021"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8">
+        <animate attributeName="stop-color" values="#38BDF8;#818CF8;#E879F9;#38BDF8" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#818CF8">
+        <animate attributeName="stop-color" values="#818CF8;#E879F9;#38BDF8;#818CF8" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#E879F9">
+        <animate attributeName="stop-color" values="#E879F9;#38BDF8;#818CF8;#E879F9" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E879F9" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#E879F9" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#94A3B8" stroke-opacity="0.08" stroke-width="1" fill="none"/>
+    </pattern>
+    <style>
+      .name { font: 800 54px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; letter-spacing: 1px; }
+      .hello { font: 600 20px 'Segoe UI', Ubuntu, Arial, sans-serif; fill: #7DD3FC; letter-spacing: 6px; }
+      .role { font: 600 24px 'Cascadia Code', 'Fira Code', Consolas, monospace; fill: #C7D2FE; }
+      .tag  { font: 400 15px 'Segoe UI', Ubuntu, Arial, sans-serif; fill: #94A3B8; }
+      .code { font: 500 15px 'Cascadia Code', 'Fira Code', Consolas, monospace; }
+      .cursor { animation: blink 1s step-end infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .r1, .r2, .r3, .r4 { opacity: 0; animation: roles 12s infinite; }
+      .r2 { animation-delay: 3s; }
+      .r3 { animation-delay: 6s; }
+      .r4 { animation-delay: 9s; }
+      @keyframes roles {
+        0%   { opacity: 0; transform: translateY(8px); }
+        4%   { opacity: 1; transform: translateY(0); }
+        23%  { opacity: 1; transform: translateY(0); }
+        27%  { opacity: 0; transform: translateY(-8px); }
+        100% { opacity: 0; }
+      }
+      .float-a { animation: floatA 6s ease-in-out infinite; }
+      .float-b { animation: floatB 7s ease-in-out infinite; }
+      .float-c { animation: floatA 8s ease-in-out infinite reverse; }
+      @keyframes floatA { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+      @keyframes floatB { 0%,100% { transform: translateY(0); } 50% { transform: translateY(10px); } }
+      .fade-in { opacity: 0; animation: fadeUp 1.2s ease forwards; }
+      .d1 { animation-delay: .15s; } .d2 { animation-delay: .4s; } .d3 { animation-delay: .65s; } .d4 { animation-delay: .9s; }
+      @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect width="1000" height="320" rx="16" fill="url(#bg)"/>
+  <rect width="1000" height="320" rx="16" fill="url(#grid)"/>
+  <circle cx="120" cy="60" r="220" fill="url(#glow1)"/>
+  <circle cx="900" cy="280" r="240" fill="url(#glow2)"/>
+  <rect x="1" y="1" width="998" height="318" rx="15" stroke="url(#accent)" stroke-opacity="0.5" stroke-width="1.5" fill="none"/>
+
+  <!-- floating code glyphs -->
+  <g class="float-a" opacity="0.6">
+    <text x="828" y="80" class="code" fill="#38BDF8">&lt;/&gt;</text>
+  </g>
+  <g class="float-b" opacity="0.55">
+    <text x="900" y="150" class="code" fill="#818CF8">{ }</text>
+  </g>
+  <g class="float-c" opacity="0.5">
+    <text x="840" y="220" class="code" fill="#E879F9">=&gt;</text>
+  </g>
+  <g class="float-b" opacity="0.4">
+    <text x="770" y="260" class="code" fill="#7DD3FC">npm run build</text>
+  </g>
+  <g class="float-a" opacity="0.4">
+    <text x="920" y="60" class="code" fill="#C7D2FE">git push</text>
+  </g>
+
+  <!-- left content -->
+  <g>
+    <text x="64" y="86" class="hello fade-in d1">HELLO WORLD, I'M</text>
+    <text x="62" y="150" class="name fade-in d2" fill="url(#accent)">Dibyasachi Mohanty</text>
+
+    <!-- rotating roles -->
+    <g class="fade-in d3">
+      <text x="64" y="196" class="role"><tspan fill="#38BDF8">&gt;</tspan></text>
+      <g class="r1"><text x="86" y="196" class="role">Full Stack Developer</text></g>
+      <g class="r2"><text x="86" y="196" class="role">React &#183; Next.js &#183; TypeScript</text></g>
+      <g class="r3"><text x="86" y="196" class="role">Node.js &#183; MongoDB &#183; PostgreSQL</text></g>
+      <g class="r4"><text x="86" y="196" class="role">Building SaaS that ships &#128640;</text></g>
+      <rect x="470" y="180" width="11" height="20" fill="#38BDF8" class="cursor"/>
+    </g>
+
+    <text x="64" y="238" class="tag fade-in d4">I turn complex requirements into elegant, deployable products.</text>
+
+    <!-- location + status pills -->
+    <g class="fade-in d4">
+      <rect x="64" y="258" width="196" height="30" rx="15" fill="#0EA5E9" fill-opacity="0.12" stroke="#38BDF8" stroke-opacity="0.45"/>
+      <circle cx="82" cy="273" r="4" fill="#34D399">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="94" y="278" class="tag" fill="#E2E8F0">Available for work</text>
+      <rect x="272" y="258" width="200" height="30" rx="15" fill="#818CF8" fill-opacity="0.10" stroke="#818CF8" stroke-opacity="0.45"/>
+      <text x="288" y="278" class="tag" fill="#E2E8F0">&#128205; Cuttack, Odisha, IN</text>
+    </g>
+  </g>
+</svg>

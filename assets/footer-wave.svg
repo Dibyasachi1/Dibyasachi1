@@ -1,0 +1,36 @@
+<svg width="1000" height="170" viewBox="0 0 1000 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fg" x1="0" y1="0" x2="1000" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5E9"/>
+      <stop offset="0.5" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#C026D3"/>
+    </linearGradient>
+    <linearGradient id="fg2" x1="0" y1="0" x2="1000" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#E879F9" stop-opacity="0.45"/>
+    </linearGradient>
+    <style>
+      .msg { font: 700 26px 'Segoe UI', Ubuntu, Arial, sans-serif; fill: #FFFFFF; }
+      .sub { font: 400 15px 'Segoe UI', Ubuntu, Arial, sans-serif; fill: #E0F2FE; }
+    </style>
+  </defs>
+
+  <!-- back wave -->
+  <path fill="url(#fg2)" d="M0 78 C 150 38, 300 118, 500 78 C 700 38, 850 118, 1000 78 L 1000 170 L 0 170 Z">
+    <animate attributeName="d" dur="7s" repeatCount="indefinite"
+      values="M0 78 C 150 38, 300 118, 500 78 C 700 38, 850 118, 1000 78 L 1000 170 L 0 170 Z;
+              M0 88 C 150 118, 300 48, 500 88 C 700 118, 850 48, 1000 88 L 1000 170 L 0 170 Z;
+              M0 78 C 150 38, 300 118, 500 78 C 700 38, 850 118, 1000 78 L 1000 170 L 0 170 Z"/>
+  </path>
+
+  <!-- front wave -->
+  <path fill="url(#fg)" d="M0 102 C 180 62, 320 142, 500 102 C 680 62, 820 142, 1000 102 L 1000 170 L 0 170 Z">
+    <animate attributeName="d" dur="5s" repeatCount="indefinite"
+      values="M0 102 C 180 62, 320 142, 500 102 C 680 62, 820 142, 1000 102 L 1000 170 L 0 170 Z;
+              M0 110 C 180 142, 320 70, 500 110 C 680 142, 820 70, 1000 110 L 1000 170 L 0 170 Z;
+              M0 102 C 180 62, 320 142, 500 102 C 680 62, 820 142, 1000 102 L 1000 170 L 0 170 Z"/>
+  </path>
+
+  <text x="500" y="140" text-anchor="middle" class="msg">Thanks for stopping by! &#128075;</text>
+  <text x="500" y="162" text-anchor="middle" class="sub">Let's build something extraordinary together</text>
+</svg>
